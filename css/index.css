@@ -4,9 +4,10 @@
 
 body {
     font-size: 1rem;
-    line-height: 2rem;
+    line-height: 3rem;
     font-family: 'Raleway', sans-serif;
-    color: #af7e14;
+    color: black;
+    
 }
 
 body a {
@@ -16,32 +17,37 @@ body a {
 h1 {
     font-family: 'Cinzel', serif;
     font-size: 2rem;
-    color: #5e3475;
+    color: #ffffff;
+
 }
 
 h2 {
     font-family: 'Cinzel', serif;
     font-size: 1.2rem;
-    text-align: center;
-    border-bottom: 1px solid #bbb;
+    text-align: left;
+    border-bottom: 1px solid rgb(0, 0, 0);
+    color: black;
 }
 
 header, main, footer {
     margin: 1.25rem auto;
     padding: .5rem;
-    max-width: 500px;
+    max-width: 700px;
+    border-radius: 25px;
+    box-shadow: 1px 5px #888888;
 }
 
 header, footer, footer a {
     text-align: center;
-    background-color: #dec4ed;
-    color: #af7e14;
+    background-color: #333cb9;
 }
 
 header img {
-    width: 100px;
+    width: 150px;
     height: auto;
     float: right;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 
 ul li {
@@ -50,4 +56,14 @@ ul li {
 
 footer {
     font-size: .8rem;
+    color: white;
 }
+
+#currentdate {color:#4b7;}
+
+
+#updated {
+    color: var(--ltblue);
+    font-size: .7em; 
+    margin:.5em;	
+  }
