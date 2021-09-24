@@ -36,7 +36,6 @@ header, main, footer {
     margin: 1.25rem auto;
     padding: .5rem;
     max-width: 700px;
-    border-radius: 25px;
     box-shadow: 1px 5px #888888;
 }
 
@@ -48,7 +47,6 @@ header, footer, footer a {
 header img {
     width: 150px;
     height: auto;
-    float: right;
     border-radius: 10px;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
