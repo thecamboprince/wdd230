@@ -75,8 +75,17 @@
 
   h4{
       margin: 0;
+      padding: 15px;
       text-align: center;
       font-family: 'Montserrat';
+  }
+
+  h5{
+    margin: 0;
+    text-align: center;
+    padding: 10px;
+    font-family: 'Montserrat';
+    font-size: 12px;
   }
   
   article h3 {
