@@ -1,68 +1,68 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
+  <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Design Principles | Chase | Home</title>
-    <meta name="description"
-        content="Lesson 2 for Janette Kaymak, CIT 230: Web Frontend Development, Brigham Young University - Idaho" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
-    <link href="https://fonts.googleapis.com/css2?family=Neucha&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="./css/2main.css">
-    <link rel="shortcut icon" href="images/shadow-cookie.ico">
-</head>
+    <title>Design Principles | Chase Duggan | Home</title>
+    <meta name="author" content="Chase Duggan" />
+    <meta name="description" content="Design Principles Document"/>
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/small.css" />
+    <link rel="stylesheet" href="css/medium.css" />
+    <link rel="stylesheet" href="css/large.css" />
 
-<body>
+  </head>
+ <body>
     <header>
-        <h1>WDD-230: Design Principles Document </h1>
-        <h2 id="name">Chase Duggan</h2>
-
+      <h1>WDD-230: Design Principles Document</h1>
+      <h2>Chase Duggan</h2>
     </header>
-    <div class="grid-container">
-        <div class="grid-item">
-            <h2>Repetition</h2>
-            <a href="https://www.churchofjesuschrist.org/">
-                <h3 class="link">churchofjesuschrist.org</h3>
-            </a>
-            <img src="images/church.jpg" id="church" alt="screenshot of the Church of Jesus Christ.org website"><br>
-            <p>The Church of Jesus Christ.org's website makes good use of repetition in their design. As you can see
-               the same font, the same font color and the same font size is used to title each section and image. It's 
-            hard to tell because this screenshot only shows a portion of it, but it continues on in the same way. </p>
+    <main>
+      <article>
+        <h3>Hick's Law</h3>
+        <div>
+          <h4><a href="https://www.reddit.com">Reddit.com</a></h4>
+          <img src="images/reddit.jpg" alt="reddit homepage" />
+          <p>
+            This site has always knows for its different contents. There are so many different categories to choose from, making it hard for 
+            people to decide what to click on. And there are always different advertisements or promotions being offered through out the site.
+            Users mostly end up scrolling for hours because of the new exciting topics being posted every minute from a variety of pages/accounts/channels.
+          </p>
         </div>
-        <div class="grid-item">
-            <h2>White Space</h2>
-            <a href="http://facebook.com/">
-                <h3>facebook.com</h3>
-            </a>
-            <img src="images/facebook.jpg" id="facebook" alt="screenshot of facebook"><br>
-            <p>Facebook makes an excellent use of white space. Facebook is endless and goes on forever, so it's very
-                important that it isn't too cluttered. I like the way the images and colors are alternated with white
-                space and text.</p>
+      </article>
+      <article>
+        <h3>White Space</h3>
+        <div>
+          <h4><a href="https://www.samsung.com/us/mobile/">Samsung.com</a></h4>
+          <picture>
+            <img src="images/samsung.jpg" alt="samsung mobile" />
+          </picture>
+          <p>
+            Samsung has pages that only display white spaces area between the elements on a their web page, making it easy to navigate and easily to differenciate
+            between different contents. From the top to the bottom is mostly white space with little wordings, which makes it pop out and straight to point of what 
+            the webpage is trying to display.
+          </p>
         </div>
-        <div class="grid-item">
-            <h2>Alignment and Visual Hiearchy</h2>
-            <a href="https://my.byui.edu/ics">
-                <h3>my.byui.edu</h3>
-            </a>
-            <img src="images/mybyu.jpg" id="myown" alt="screenshot of My BYU-I homepage"><br>
-            <p>I think this website is a good example of both Alignment and Visual Hiearchy.
-                Text and boxes are lined up nicely to create order. Things that we are meant to see first are larger and
-                more prominent. Unfortunately, this page isn't very mobile friendly.</p>
-            <a href="https://janettekaymak.github.io/assignment-portal/index.html">
-                <h3 id='home'>Home</h3>
-            </a>
+      </article>
+      <article>
+        <h3>Repetition</h3>
+        <div>
+          <h4><a href="https://youtube.com/gaming">Youtube.com/gaming</a></h4>
+          <img src="images/youtubegaming.jpg" alt="youtube gaming" />
+          <p>
+            Youtube is a website filled with all types of videos. But yet at the same time, those videos will have a similar design elements and making them come
+            together as a cohesive whole. This type of algorithsm can help users navigate through contents of the same kind. So that this way, it keeps the users/watchers stay on 
+            their website for a longer period of time.
+          </p>
         </div>
-    </div>
+      </article>
+    </main>
+
     <footer>
-        <p>
-            © 2020  Janette Kaymak, New York, 
-            <a href=" https://www.byui.edu/online">BYU-I Online Learning,</a>
-            Last updated: <span id="date"></span>
-
-            <script src="/lesson2/js/lastModified.js"></script>
-        </p>
+        <p>&copy;<span id="year"> </span> Chase Duggan | Utah | <a href="http://www.byui.edu/online">BYUI Online Learning</a></p>
+        <span id="updated"></span>
     </footer>
-</body>
+    <script src="js/datemodified.js"></script>
 
+ </body>
 </html>

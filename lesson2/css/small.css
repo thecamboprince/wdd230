@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css?family=Kalam|Acme');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+*
+{
+    box-sizing: border-box;
+  }
+  
+  html,
+  body {
+    width: 100%;
+    
+  }
+  
+  header,
+  main,
+  footer {
+    margin: 0 auto;
+    padding: 1rem;
+    max-width: 860px;
+    
+  }
+  
+  header,
+  footer {
+    background-color: #043358;
+    color: white;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    text-align: center;
+  }
+  
+  header h1 {
+    font-size: 2rem;
+    font-family: 'Acme', sans-serif;
+  }
+  
+  header h2 {
+    font-size: 1.5rem;
+    font-family: 'Montserrat';
+  }
+  
+  footer {
+    font-size: 0.8rem;
+  }
+  
+  footer a {
+    color: unset;
+  }
+  
+  main {
+    padding: 10px;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 20px;
+  }
+  
+  img {
+    max-width: 100%;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  }
+  
+  article {
+    background-color: #f9f8ff;
+    border-radius: 10px;
+  }
+  
+  h3{
+    margin: 0;
+    font-size: 19px;
+    font-family: 'Acme', sans-serif;
+    text-align: center;
+  }
+
+  h4{
+      margin: 0;
+      text-align: center;
+      font-family: 'Montserrat';
+  }
+  
+  article h3 {
+    background-color: #dfb63b;
+    padding: 15px;
+    color: white;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  }
+  
+  article > div {
+    padding: 15px;
+    
+  }
+  
+  article h4 {
+    font-size: 1rem;
+    font-weight: 400;
+    margin: 2px 0 7px 0;
+  }
+  
+  article p {
+    line-height: 1.5rem;
+    padding: .7em;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    font-family: 'Montserrat';
+    font-size: 12px;
+  }
+  
+  article a {
+    display: inline-block;
+    margin-bottom: 10px;
+  }
+
+  #updated {
+    color: var(--ltblue);
+    font-size: 1em; 
+    margin:.5em;	
+  }
