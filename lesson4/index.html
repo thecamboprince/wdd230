@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Weather of Preston | Home</title>
+        <meta name="author" content="Chase Duggan" />
+        <meta name="description" content="To show weather in Preston, ID">
+        <link rel="icon" href="images/favicon.ico" type="icon">
+        <link href="css/normalize.css" rel="stylesheet">
+        <link href="css/small.css" rel="stylesheet">
+        <link href="css/medium.css" rel="stylesheet">
+        <link href="css/large.css" rel="stylesheet">
+    </head>
+    <body>
+        <header>
+            <img src="images/weatherlogo.png" alt="Weatherlogo">
+            <div class="centerheading">
+                <h1>Weather of Preston</h1>
+                <h2>Make the right choice before going <output></output></h2>
+            </div>
+        </header>
+        <nav class="navspace">
+            <div class="button"><button onclick="myFunction()"> Menu</button></div>
+            <ul id="myDIV" class="hide">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Preston</a></li>
+                <li><a href="#">Soda Springs</a></li>
+                <li><a href ="#">Fish Haven</a></li>
+                <li><a href ="#">Storm Center</a></li>
+                <li><a href="#">Gallery</a></li>
+            </ul>
+        </nav>
+        <script src="js/showhide.js"></script>
+        <main>
+            <section>
+                <h3>Preston Idaho</h3>
+            </section>
+            <section>
+                <h4>Hero w/ Weather Summary</h4>
+            </section>
+            <section>
+                <h5>5 Day Forecast</h5>
+            </section>
+            <section>
+                <h6>Article</h6>
+            </section>
+            <section>
+                <h6>Contact Information</h6>
+            </section>
+        </main>
+        <footer>
+        <p>&copy;<span id="year"> </span> Chase Duggan | Utah | <a href="http://www.byui.edu/online">BYUI Online Learning</a>
+            | <a href="https://thecamboprince.github.io/wdd230/">Home</a>
+            </p>
+            <span id="updated"></span>
+        </footer>
+        <script src="js/datemodified.js"></script>
+    </body>
+</html>

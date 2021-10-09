@@ -1,0 +1,148 @@
+@import url('https://fonts.googleapis.com/css?family=Kalam|Acme');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+*
+{
+    box-sizing: border-box;
+}
+  
+html, body {
+    width: 100%;
+    
+}
+  
+header {
+    background-color: #043358;
+    color: rgb(255, 255, 255);
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    padding: .5rem;
+    display: flex;
+}
+
+header img {
+    max-width: 80px;
+    box-shadow: none;
+}
+
+div {
+    display: block;
+}
+  
+header h1 {
+    color:#ffffff;
+    font-family: 'Acme', sans-serif;
+    text-align: center;
+}
+
+header h2 {
+    font-size: .7rem;
+    font-family: 'Montserrat';
+}
+  
+.navspace{
+    margin-top: -15px;
+}
+
+nav button {
+    margin: 0.2rem 2%;
+    font-size: 1rem;
+    color:#ffffff;
+    background-color:#1d8ab6;
+    border-radius: 10px;
+    box-shadow: rgba(255, 255, 255, 0.35) 0px 5px 15px;
+    
+}
+
+nav{
+    background-color: #043358;
+    font-family: 'Acme', sans-serif;
+    font-size: 1rem;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+nav ul {
+    list-style-type: none;
+}
+
+nav ul li a{
+    display: block;
+    text-decoration: none;
+    color: #ffffff;
+    text-align: center;
+    padding: 5px;
+}
+
+nav ul li.active a{
+    color:white;
+}
+
+nav ul li a:hover{
+    background-color: #8dc3d3;
+    
+}
+
+nav ul.hide{
+    display:none;
+}
+
+.button{
+    text-align: center;
+}
+
+
+main {
+    padding: 5px;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 15px;
+}
+  
+
+h3{
+    text-align: center;
+    font-family: "Acme", sans-serif;
+    font-size: 30px;
+    font-style: bold;
+}
+
+h4{
+    text-align: center;
+    font-family: "Montserrat";
+}
+
+h5{
+    text-align: center;
+    font-family: "Montserrat";
+}
+
+h6{
+    text-align: center;
+    font-family: "Montserrat";
+    font-size: 12px;
+}
+
+
+footer {
+    background-color: #043358;
+    color: white;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    text-align: center;
+    margin: 0 auto;
+    padding: .5rem;
+}
+  
+footer a {
+    color: unset;
+} 
+
+#updated {
+    color: var(--ltblue);
+    font-size: 1em; 
+    margin:.5em;	
+}

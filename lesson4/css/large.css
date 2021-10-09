@@ -1,0 +1,31 @@
+@media only screen and (min-width: 60em){
+
+    nav button{
+        display: none;
+    }
+
+    nav ul.hide{
+        display: flex;
+        
+    }
+
+    nav ul{
+        padding: 10px;
+        text-align: center;
+    }
+    
+    nav ul li{
+        flex: 100%;
+        display: inline;
+    }
+
+    nav ul li a{
+        border: none;
+        display: inline;
+        text-align: center;
+        border-radius: 10px;
+        box-shadow: rgba(255, 255, 255, 0.35) 0px 5px 15px;
+        
+    }
+
+}
