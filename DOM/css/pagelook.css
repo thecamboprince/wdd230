@@ -27,26 +27,35 @@ main {
 	display: grid;
 	grid-template-columns: 1fr;
 	width: 95%;
+	border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 
 input,
 button {
-	padding: 0.35rem;
+	padding: 0.15rem;
 	margin-left: 1rem;
 	font-size: 1.1rem;
+	border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 
 input {
 	width: 200px;
+	border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+
 }
 
 label {
-	font-size: 0.9rem;
+	font-size: 1rem;
 }
 .listcontainer {
 	border: 1px solid #bbb;
 	margin: 1rem;
 	padding: 1rem;
+	border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 
 .list {

@@ -5,7 +5,7 @@ Attributes:
  */
 
 // Decalres function
-function assignAddChap(){
+function addButton(){
 	function addChapter(){
         // Declares variables with object element. 
 		let list = document.querySelector('.list'); 
@@ -13,34 +13,36 @@ function assignAddChap(){
 		let item = document.createElement('li'); 
 		let button = document.createElement('button'); 
 		
-		//populate the li elements  with the input
+		// Creates a list when user input something to li
 		item.innerText = input.value; 
 		
-		//set button text
+		// Creates an X button for deletion
 		button.innerText = '❌'; 
 		
-		//assign click listener to button that deletes parent
+		// Deletes an element from the parent list
 		button.addEventListener('click', x => {button.parentElement.remove()});
 		
-		//append the li element with the delete button
+		// Adds what the user input to the list
 		item.appendChild(button); 
 		
-		//append the list element with the li element just created and appended with text and the delete button
+		// Adds what the user input to the list with an X button
 		list.appendChild(item); 
 		
-		//set input to empty 
+		// Makes sure the input is empty 
 		input.value = ''; 
 	
-		//send the focus to the input element
+		// Sets the element as the active element in the current document
 		input.focus(); 
 	}
 	
+	// Retuns the element within the document for button and links with a click
 	document.querySelector('button').addEventListener('click',addChapter)
 }
 
+// Initiates the function addButton();
 function init(){
-    assignAddChap();
+    addButton();
 }
 
-//wait for content to load before initializing page.
+// Registers the argument of the content
 window.addEventListener('DOMContentLoaded', init);
