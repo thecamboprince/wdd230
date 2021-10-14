@@ -72,3 +72,25 @@ li {
 		width: 480px;
 	}
 }
+
+footer {
+    background-color: #BBEEDD;
+    color: black;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    text-align: center;
+    margin: 0 auto;
+    padding: .5rem;
+	margin-top: 300px;
+	font-size: .7em;
+}
+  
+footer a {
+    color: unset;
+} 
+
+#updated {
+    color: var(--ltblue);
+    font-size: .8em; 
+    margin:.5em;	
+}
