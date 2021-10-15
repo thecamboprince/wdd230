@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Home Page">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Weather Home Page</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/medium.css">
+    <link rel="stylesheet" href="css/small.css">
+    <link rel="shortcut icon" href="favicon.ico">
+    <script defer src="https://cdn.aerisapi.com/sdk/js/latest/aerisweather.min.js"></script>
+
+
+</head>
+
+<body>
+    <header>
+        <img class="logo" src ="images/weatherlogo.png" alt="Weather logo">
+        <section class="headings">
+        <h1>Weather of Preston</h1>
+        <div id="secondlogotext">Make the right choice before going</div>
+        </section>
+    </header>
+        <nav class="navspace">
+            <div class="button"><button onclick="myFunction()">☰</button></div>
+            <ul id="myDIV" class="hide">
+                <li><a href="#">Home</a></li>
+                <li class = "active"><a href="prestonid.html">Preston</a></li>
+                <li><a href="#">Soda Springs</a></li>
+                <li><a href="#">Fish Haven</a></li>
+                <li><a href="#">Storm Center</a></li>
+                <li><a href="#">Gallery</a></li>
+            </ul>
+        </nav>
+        <script src="js/showhide.js"></script>
+<main>
+    <h2>Preston, Idaho</h2>
+    <section id="mainbodystuff">
+        <div class="hero">
+            <picture id="townpic">
+                <img src="images/maybeidahopic.jpg" alt="Town Pic">
+            </picture>
+
+        <section class="sunpicontop summary">
+            <img src="images/sun.png" alt="sun pic">
+        </section>
+            
+        <section class="textontop">
+            <h2>Summary</h2>
+            <p>Temperature: ...</p>
+            <p>Humidity: ...</p>
+            <p>Wind Speed: ...</p>
+            <p>Wind Chiil: ...</p>
+            <p>Real Feel: ...</p>
+        </section>
+        </div>
+        
+        <br><br>
+        <h2>5 Day Forecast</h2>
+        <div class="fivedayforecast">
+            <ul class="fivedayalign">
+                <li>
+                  <h4>Monday</h4>
+                  <img src="images/sun.png" alt="">
+                  <p>
+                    Sunny
+                  </p>
+                </li>
+                <li>
+                  <h4>Tuesday</h4>
+                  <img src="images/sun.png" alt="">
+                  <p>
+                    Sunny
+                  </p>
+                </li>
+                <li>
+                  <h4>Wednesday</h4>
+                  <img src="images/sun.png" alt="">
+                  <p>
+                    Sunny
+                  </p>
+                </li>
+                <li>
+                  <h4>Thursday</h4>
+                  <img src="images/sun.png" alt="">
+                  <p>
+                    Sunny
+                  </p>
+                </li>
+                <li>
+                  <h4>Friday</h4>
+                  <img src="images/sun.png" alt="">
+                  <p>
+                    Sunny
+                  </p>
+                </li>
+              </ul>
+        </div>
+        
+        <br><br>
+        <h2>Article</h2>
+        <div class="article">
+            <img src="images/idaho.jpg">
+            <p>Preston is a city in Franklin County, Idaho, United States. The population was 5,204 at the 2010 census. The city is the county seat of Franklin County. It is part of the Logan, Utah-Idaho Metropolitan Statistical Area</p>
+            <p>In 1866, Latter-day Saint (LDS, or Mormon) pioneers arrived in the northern end of the Cache Valley, stretching across southeastern Idaho and northeastern Utah. They founded a community in that location and named it Worm Creek, but in 1881 changed it to Preston because leaders of the LDS Church in Salt Lake City objected to the name "Worm Creek" being part of any church congregation's name.[6][7] The name Preston was suggested by a local member to honor William B. Preston, who at the time was president of the LDS Church's Cache Stake.</p>
+            <P>For several years the city held a "Napoleon Dynamite Festival" in the summer. Many of the featured festival themes related to events occurring during the film. For example: Tetherball Tournament, Tater Tot Eating Contest, Moon Boot Dance, Impersonation, Look-A-Like Contest, Football Throwing Contest and more. In 2004 there was a single day event that drew approximately 300 people. Although this was not a large crowd, it did help raise $1,500 for the Preston School District Education Foundation. In 2005 an estimated 6,000 people attended the event, but that number dropped to an estimated 400 people in 2006. The 2007 and 2008 event was held along with the 'That Famous Preston Night Rodeo' in Preston. There are no plans for reviving the event.[10] 'That Famous Preston Night Rodeo' is usually held in late July, along with the Franklin County parade. The rodeo's name ('That Famous Preston Night Rodeo') comes from it being the first rodeo held during night time. It includes many events such as bull riding, barrel racing, and other popular events. The Franklin county parade includes floats and advertisements of local businesses. The rodeo and parade remain one of the town's most popular local events and traditions.</P>
+        </div>
+
+        <br><br>
+        <h2>Contact</h2>
+        <div class="contact">
+            <p>email: prestonidweather@weather.com</p>
+            <div class="iframcenter">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d47365.773853438026!2d-111.91534443111685!3d42.09974162639047!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8754f78c7cda6c31%3A0xf1b3b4fc465a4a3f!2sPreston%2C%20ID%2083263!5e0!3m2!1sen!2sus!4v1621917355936!5m2!1sen!2sus" max-width="40px" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            </div>
+        </div>
+
+    </section>
+
+</main> 
+<br><br>       
+<footer>
+    <p>&copy;<span id="year"> </span> Chase Duggan | Utah | <a href="http://www.byui.edu/online">BYUI Online Learning</a>
+        | <a href="https://thecamboprince.github.io/wdd230/">Home</a>
+        </p>
+        <span id="updated"></span>
+    </footer>
+    <script src="js/datemodified.js"></script>
+        
+    </body>
+    </html>
