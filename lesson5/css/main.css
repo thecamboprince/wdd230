@@ -161,6 +161,8 @@ h3, h4{
     
 }
 
+
+
 .textontop{
     position:absolute;
     top:150px;
@@ -171,6 +173,7 @@ h3, h4{
     padding: 10px;
     width: 50%;
     height: 40%;
+    overflow: scroll;
 }
 
 .textontop p {
@@ -180,7 +183,6 @@ h3, h4{
     font-family: "Acme";
     text-align: center;
     color: rgb(102, 101, 101);
-
 }
 /*End of Main - Preston, ID*/
 
@@ -194,6 +196,7 @@ h3, h4{
     color: #083047;
     border-radius: 10px;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    overflow: scroll;
 }
 
 .fivedayalign { 
@@ -302,5 +305,9 @@ footer a {
 
 div, iframe{
     text-align:center;
-
+    overflow: scroll;
+}
+::-webkit-scrollbar {
+    width: 0px;
+    background: transparent; /* make scrollbar transparent */
 }
