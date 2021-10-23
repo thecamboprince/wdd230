@@ -1,0 +1,327 @@
+@import url('https://fonts.googleapis.com/css?family=Kalam|Acme');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+
+* {
+    box-sizing:border-box;
+}
+
+header{
+    background:#ffffff;
+    max-width: 100%;
+    font-family: 'Lato', sans-serif;
+    color:#fcd574;
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    justify-content: center;
+    text-align: center;
+    font-size: 2em;
+    line-height: 1;
+  }
+
+
+
+h1{
+    color:#043358;
+    font-family: "Acme", sans-serif;
+    margin: auto;
+    font-weight: normal;
+    font-size:2em;
+    text-align: center;
+}
+
+a {
+    color:#fcd574;
+    text-decoration: none;
+}
+
+
+#secondlogotext {font-size:.5em;
+    color: #043358;
+    margin-top: 10px;
+    font-family: "Monstserrat", sans-serif;
+    text-align: center;
+}
+
+.logo{
+    max-width: 100px;
+}
+
+/*Navigation bar*/
+.navspace{
+    margin-top: -5px;
+
+}
+
+nav button {
+    margin: 0.2rem 2%;
+    font-size: 1rem;
+    color:#ffffff;
+    background-color:#1d8ab6;
+    border-radius: 10px;
+    box-shadow: rgba(255, 255, 255, 0.35) 0px 5px 15px;        
+}
+    
+nav{
+    background-color: white;
+    font-family: 'Acme', sans-serif;
+    font-size: 1rem;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+    
+nav ul {
+    list-style-type: none;
+}
+    
+nav ul li a{
+    display: block;
+    text-decoration: none;
+    color: #043358;
+    text-align: center;
+    padding: 5px;
+}
+    
+nav ul li.active a{
+    color:#149ba0;
+}
+    
+nav ul li a:hover{
+    background-color: #8dc3d3;        
+}
+    
+nav ul.hide{
+    display:none;
+}
+    
+.button{
+    text-align: left;
+}
+/*End of Nagivation bar*/
+
+/*Main - Preston, ID*/
+main {
+    padding: 2em;
+    max-width: 980px;
+    margin: auto; 
+    
+
+}
+
+h2{
+    text-align: center;
+    color: rgb(112, 112, 112);
+    font-size: 2em;
+    font-family: "Acme";
+    margin-left: .5em;
+}
+
+h3, h4{
+    text-align: center;
+    color: rgb(112, 112, 112);
+    font-size: 1em;
+    font-family: 'Pacifico', cursive;
+    font-weight: normal;
+    margin-left: .5em;
+    margin: 5px;
+}
+
+#mainbodystuff{
+    font-family: "Monstserrat";
+}
+
+.prestonweathersize {
+    padding-left: 0;
+    padding-right:0;
+}
+
+.prestonweathersize img{
+    max-width: 100%;
+}
+
+
+
+.hero {
+    margin: auto;
+    position: relative;
+    max-width: 800px;
+    width: 100%;
+}
+
+.hero img {
+    width: 100%;
+    border-radius: 10px;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+#townpic {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.sunpicontop{
+    position:absolute;
+    top: 25px;
+    left: 25px;
+    z-index: 2;
+}
+
+.sunpicontop img{
+    max-width: 100px;
+    
+}
+
+
+
+.textontop{
+    position:absolute;
+    top:150px;
+    left: 180px;
+    background:#ffffff;
+    opacity: .8;
+    font-size: .65em;
+    padding: 10px;
+    width:50%;
+    height: 55%;
+    overflow: scroll;
+}
+
+.textontop p {
+    line-height: 1;
+    margin: .5em;
+    font-size: 1.5em;
+    font-family: "Acme";
+    text-align: center;
+    color: rgb(102, 101, 101);
+}
+/*End of Main - Preston, ID*/
+
+
+/*5 Days Forecast*/
+.fivedayforecast{
+    background-color: white;
+    padding: 20px;
+    border: 2px #f9ebac;
+    font-family: 'Pacifico', cursive;
+    color: #083047;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    overflow: scroll;
+}
+
+.fivedayalign { 
+    display: grid; 
+    grid-template-columns: repeat(5, 1fr);
+    max-height: none;
+  }
+  
+  .fivedayalign li > * { 
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+  
+  .fivedayalign li {
+    padding: 1rem;
+    list-style-type: none;
+  }
+  
+  .fivedayalign img {
+    margin: 0 1.5rem;
+    padding: 1.5rem 0;
+    max-width: 50px;
+    
+  }
+  
+  .fivedayalign p {
+    font-size: .85rem;
+    text-align: center;
+  }
+  /*End of 5 Day Forecast*/
+
+
+/*Main - Article*/
+.article{
+    background-color: white;
+    padding: 20px;
+    border: 2px #f9ebac;
+    font-family: 'Pacifico', cursive;
+    font-size: .8em;
+    color: #083047;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+
+
+.article > * { 
+    margin-bottom: 1rem;
+}
+
+.article img{
+    max-width: 40%;
+    float: left;
+    padding: 5px;
+    border-radius: 10px;
+}
+/*End of Article*/
+
+
+/*Main - Contact*/
+.contact{
+    background-color: white;
+    padding: 20px;
+    border: 2px #f9ebac;
+    font-family: 'Noto Sans SC', sans-serif;
+    color: #083047;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.contact p{
+    font-family: "Montserrat";
+    font-size: .8em;
+    text-align: center;
+}
+
+.contact iframe{
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    margin: 0 auto;
+}
+/*End of Contact*/
+
+
+/*footer*/
+footer {
+    background-color: #ffffff;
+    color: #043358;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    text-align: center;
+    margin: 0 auto;
+    padding: .5rem;
+    font-family: "Acme";
+}
+  
+footer a {
+    color: unset;
+} 
+
+#updated {
+    color: var(--ltblue);
+    font-size: 1em; 
+    margin:.5em;	
+}
+
+
+/*Make iframe scrollable*/
+div, iframe{
+    text-align:center;
+    overflow: scroll;
+}
+::-webkit-scrollbar {
+    width: 0px;
+    background: transparent; /* make scrollbar transparent */
+}
