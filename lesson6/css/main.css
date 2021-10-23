@@ -51,6 +51,7 @@ a {
 /*Navigation bar*/
 .navspace{
     margin-top: -5px;
+    
 
 }
 
@@ -81,6 +82,7 @@ nav ul li a{
     color: #043358;
     text-align: center;
     padding: 5px;
+    
 }
     
 nav ul li.active a{
@@ -194,6 +196,16 @@ h3, h4{
     font-size: 1.5em;
     font-family: "Acme";
     text-align: center;
+    color: rgb(102, 101, 101);
+}
+
+#summarycenter{
+    line-height: 1;
+    margin: .5em;
+    font-size: 1.5em;
+    font-family: "Acme";
+    margin-left: auto;
+     margin-right: auto;
     color: rgb(102, 101, 101);
 }
 /*End of Main - Preston, ID*/
