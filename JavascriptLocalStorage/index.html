@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Local Storage</title>
+  <link rel="stylesheet" href="main.css">
+  <script type="text/javascript" src="main.js"></script>
+</head>
+<body>
+    <div class="container">
+        <div id="formDiv">
+                <form id="carForm">
+                    <h1>JavaScript LocalStorage</h1>
+                    <label id="GameName1" for="carBrand" >Car: </label>
+                    <input type="text" id="carBrand" placeholder="Car brand" required autofocus><br>
+                    <label id="carPrice1" for="carPrice" >Price: </label>
+                    <input type="text" id="carPrice" placeholder="Price" required><br>
+                    <label id="key1" for="key" >Key: </label>
+                    <input type="text" id="key" placeholder="Key" required><br>
+                    <button type="submit">Store to Local</button>
+                </form>
+                <br><br><br>
+                <label id="retrieveKey1" for="retrieveKey" >Enter Key to retrieve item: </label>
+                <input type="text" id="retrieveKey" placeholder="retrieveKey" required><br>
+                <button id="retrieveButton">Retrieve From Local</button>
+                <br>
+                <div id="retrieve"></div>
+                <br><br><br>
+                <label id="removeKey1" for="removeKey" >Enter Key to delete item: </label>
+                <input type="text" id="removeKey" placeholder="removeKey" required><br>
+                <button id="removeButton">Remove LocalStorage</button>
+                <br><br>
+                <button id="clearButton">Clear All LocalStorage</button>
+        </div>
+    </div>
+</body>
+</html>

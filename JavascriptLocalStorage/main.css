@@ -1,0 +1,66 @@
+@import url('https://fonts.googleapis.com/css?family=Kalam|Acme');
+
+.container {
+    margin: auto;
+    width: 30%;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;    
+    padding: 10px;
+    overflow: scroll;
+}
+
+.container h1{
+    font-family: "Acme";
+}
+
+#carForm{
+    padding: 10px;
+}
+
+label{
+    padding: 10px;
+}
+
+input{
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px; 
+    padding: 10px;
+}
+
+#carBrand1{
+    margin-bottom: 20px;
+    font-family: "Acme";
+}
+
+
+#carPrice1{
+    margin-bottom: 20px;
+    font-family: "Acme";
+}
+
+#key1{
+    margin-bottom: 20px;
+    font-family: "Acme";
+}
+
+#retrieveKey1{
+    font-family: "Acme";
+}
+
+#removeKey1{
+    font-family: "Acme";
+}
+
+
+button{
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px; 
+    margin-left: 50px;
+}
+
+
+::-webkit-scrollbar {
+    width: 0px;
+    background: transparent; /* make scrollbar transparent */
+}
+
