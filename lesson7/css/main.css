@@ -363,7 +363,7 @@ nav {
 
 /*Main - Contact*/
 .contact{
-    background-color: #111111;
+    background-color: #023047;
     margin: 0 auto;
     overflow-x: hidden;
     padding: 20px;
@@ -462,9 +462,8 @@ h1{
 
 /*footer*/
 footer {
-    background-color: #ffffff;
-    color: #043358;
-    border-radius: 10px;
+    background-color: #083047;
+    color: white;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
     text-align: center;
     margin: 0 auto;
