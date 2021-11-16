@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+
 main {
     display: flex; 
     min-height: 100vh; 
@@ -12,7 +14,6 @@ table {
     width: 20rem; 
     max-width: 90%; 
     text-align: center;
-    
     box-shadow: 0.25rem 0.25rem 1rem #628ca6;
 }
 
