@@ -1,0 +1,486 @@
+@import url('https://fonts.googleapis.com/css?family=Kalam|Acme');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+html {
+    background: #fafafa;
+    font-family: Roboto, sans-serif;
+}
+
+body {
+    margin: 0;
+}
+
+#banner {
+    display: none;
+    background-color: #f1f092;
+    color: #000;
+    padding: 1px;
+    text-align: center;
+    margin-bottom: 5px;
+    font-family: "Montserrat", serif;
+    font-size: 12px;
+}
+
+nav {
+    margin: 0;
+    overflow: hidden;
+    background: #083047;
+    transition: 0.3s;
+}
+
+.nav-content {
+    max-width: 1024px;
+    margin: 0 auto;
+    padding: 0 20px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.nav-content img{
+    max-width: 50px;
+    border-radius: 10px;
+    box-shadow: rgba(255, 255, 255, 0.35) 0px 5px 15px; 
+    margin-left: -10px; 
+    
+}
+
+.nav-content p{
+    font-family: "ACME";
+    font-size: 20px;
+    
+}
+
+#logotext{
+    margin-top: -110px;
+    margin-left: 50px;
+}
+
+#logotext2mall{
+    margin-top: -40px;
+    font-size: 12px;
+    margin-left: 60px;
+    line-height: 10px;
+}
+
+.nav-content a {
+    display: block;
+    font-size: 14px;
+    line-height: 80px;
+    text-decoration: none;
+    transition: all 0.3s;
+    color: #ffffff;
+}
+
+.nav-content a:hover,
+.nav-icon:hover,
+.search-icon:hover {
+    opacity: 0.7;
+    color:hsl(202, 77%, 76%);
+}
+
+::-webkit-scrollbar {
+    width: 0px;
+    background: transparent; /* make scrollbar transparent */
+}
+
+.nav-links {
+    width: 60%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.nav-icon {
+    display: none;
+    grid-gap: 5px;
+    grid-template-columns: auto;
+    padding: 17px 0;
+    height: 10px;
+    cursor: pointer;
+    transition: all 0.3s;
+    position: relative;
+    z-index: 99;
+}
+
+.bar {
+    height: 1px;
+    width: 18px;
+    background: white;
+    transition: 0.5s;
+}
+
+#active{
+    color:#149ba0;
+}
+
+@media (max-width: 768px) {
+    .show {
+        background-color: #083047;
+    }
+
+    .nav-links {
+        position: fixed;
+        top: 44px;
+        right: 0;
+        height: 0;
+        width: 40%;
+        background: #ffffff;
+        flex-direction: column;
+        justify-content: flex-start;
+        transition: height 1s cubic-bezier(0.19, 1, 0.22, 1),
+            background-color 0.3s;
+        border-radius: 10px;
+        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+        
+    }
+
+    .show .nav-links {
+        height: 60%;
+        margin-top: 20px;
+        background-color: #083047;
+        position:sticky;
+    }
+
+    .nav-links a {
+        height: 0;
+        width: 0;
+        opacity: 0;
+        overflow: hidden;
+        margin-right: 50px;
+        margin-left: 50px;
+        transition: opacity 1.5s, height 2s;
+        overflow: scroll;
+        
+    }
+
+
+    .show .nav-links a {
+        opacity: 1;
+        width: auto;
+        height: auto;
+    }
+
+    .show .nav-icon{
+        position: absolute;
+    }
+
+    .nav-icon {
+        order: 1;
+        display: grid;
+    }
+
+    .logo {
+        order: 2;
+    }
+
+    
+    
+}
+
+.show .one {
+    transform: rotate(45deg) translateY(5.5px);
+}
+
+.show .two {
+    transform: rotate(-45deg) translateY(-5.5px);
+}
+
+.content {
+    max-width: 960px;
+    margin: 0 auto;
+    position:sticky;
+    
+}
+
+.content h1 {
+    color: #023047;
+    font-size: 2em;
+    font-family: "Acme";
+    position: relative;
+    text-align:center;
+    
+}
+
+#mainbodystuff{
+    font-family: "Monstserrat";
+}
+
+.hero {
+    margin: auto;
+    position: relative;
+    max-width: 900px;
+    width: 100%;
+}
+
+.hero img {
+    width: 100%;
+    border-radius: 10px;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+#townpic {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.sunpicontop{
+    position:absolute;
+    top: 25px;
+    left: 25px;
+    z-index: 2;
+    
+}
+
+.sunpicontop img{
+    max-width: 100px;
+    height: auto;
+    
+}
+
+.textontop{
+    position: absolute;
+    top:50px;
+    left: 180px;
+    background:#ffffff;
+    opacity: .8;
+    font-size: .65em;
+    padding: 10px;
+    width: 50%;
+    height: 40%;
+    overflow: scroll;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    
+}
+
+.textontop p {
+    line-height: 1;
+    margin: .5em;
+    font-size: 1.5em;
+    font-family: "Acme";
+    text-align: center;
+    color: rgb(102, 101, 101);
+}
+
+.textontop h2{
+    text-align: center;
+    color: rgb(112, 112, 112);
+    font-size: 2em;
+    font-family: "Acme";
+    margin-left: .5em;
+}
+
+/*5 Days Forecast*/
+.fivedayforecast{
+    padding: 10px;
+    font-family: 'Pacifico', cursive;
+    color: #083047;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    overflow: scroll;
+    max-width: 800px;
+    margin: 0 auto;
+    background-color: #d4edf8;
+
+}
+
+.fivedayalign { 
+    display: grid; 
+    grid-template-columns: repeat(5, 1fr);
+    max-height: none;
+  }
+  
+  .fivedayalign li > * { 
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+  
+  .fivedayalign li {
+    padding: 1rem;
+    list-style-type: none;
+  }
+  
+  .fivedayalign img {
+    margin: 0 auto;
+    padding: 1.5rem 0;
+    max-width: 50px;
+    
+  }
+  
+  .fivedayalign p {
+    font-size: .85rem;
+    margin: 0 auto;
+  }
+  /*End of 5 Day Forecast*/
+
+  h4{
+      font-family: "ACME";
+      text-decoration: underline solid #023047;
+  }
+
+  hr {
+    width: 50%;
+    border: 4px solid #023047;
+    border-radius: 5px;
+  }
+
+/*Main - Article*/
+.article{
+    background-color: white;
+    padding: 20px;
+    border: 2px #f9ebac;
+    font-family: 'Roboto';
+    font-size: 1.2em;
+    color: #083047;
+    border-radius: 10px;
+    box-shadow: #083047 0px 5px 15px;
+    
+}
+
+
+.article > * { 
+    margin-bottom: 1rem;
+    
+}
+
+.article img{
+    max-width: 40%;
+    float: left;
+    padding: 5px;
+    border-radius: 10px;
+    
+    
+}
+
+.article p{
+    font-weight: 100;
+    margin-top: -1px;
+    
+}
+/*End of Article*/
+
+/*Main - Contact*/
+.contact{
+    background-color: #023047;
+    margin: 0 auto;
+    overflow-x: hidden;
+    padding: 20px;
+    border: 2px #f9ebac;
+    font-family: 'Noto Sans SC', sans-serif;
+    color: white;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    max-width: 500px;
+}
+
+.contact p{
+    font-family: "Montserrat";
+    font-size: 1em;
+    text-align: center;
+}
+
+.contact iframe{
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    margin: 0 auto;
+}
+
+#iframecenter{
+    text-align:center;
+    overflow: scroll;
+}
+
+#socialmedialogo{
+    text-align: center;
+}
+#socialmedialogo img{
+    width: 45px;
+    border-radius: 50%;
+    padding: 5px;
+}
+/*End of Contact*/
+
+
+
+/*Gallery Lazy Load*/
+main {
+    max-width: 980px;
+    margin: 0 auto;
+}
+
+.gallerylazyload{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-gap: 5px;
+    grid-auto-flow: row;
+    
+}
+
+.gallerylazyloadcolumn{
+    padding: 10px;
+    margin: 1px auto;
+  }
+
+.gallerylazyload img {
+    background: #F1F1FA;
+    width: 300px;
+    height: 200px;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  }
+
+.gallerylazyload img:hover {
+    box-shadow:0 0 50px #083047;
+    margin: auto;
+    transform: scale(1.5);
+    transition: transform .5s ease;
+
+}
+
+.gallerylazyload p {
+    margin: 0 auto;
+    max-width: 80%;
+    border-radius: 30px;
+    padding: 10px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    color: black;
+    font-family: "Montserrat";
+    text-align: center;
+    position: relative;
+    font-weight: bold;
+    background: linear-gradient(to top, white, transparent);
+}
+    
+
+h1{
+    text-align: center;
+    font-family: "Acme";
+}
+
+.wireframe{
+    margin: 0 center;
+    max-width: 980px;
+}
+
+/*footer*/
+footer {
+    background-color: #083047;
+    color: white;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    text-align: center;
+    margin: 0 auto;
+    padding: .5rem;
+    font-family: "Acme";
+}
+  
+footer a {
+    color: unset;
+} 
+
+#updated {
+    color: var(--ltblue);
+    font-size: 1em; 
+    margin:.5em;	
+}
