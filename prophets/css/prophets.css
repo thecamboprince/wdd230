@@ -26,6 +26,7 @@ h1{
 .cards {
     display: grid;
     justify-content: center;
+    text-align: center;
 }
 section {
     display: flex; 
