@@ -14,7 +14,7 @@ fetch(apiURL)
         // Add high temperature
         let tempKelvHigh = jsObject.list[0].main.temp_max;
         let tempFarHigh = kelToFar(tempKelvHigh);
-        document.querySelector('.temperature').textContent = `${tempFarHigh} °F`;
+        document.querySelector('.hightemperature').textContent = `${tempFarHigh} `;
 
         // Add humidity
         document.querySelector('.humidity').textContent = `${jsObject.list[0].main.humidity}%`
@@ -22,11 +22,11 @@ fetch(apiURL)
         // Add wind speed 
         const windSpeed = jsObject.list[0].wind.speed;
         const windSpeedMPH = Math.round(windSpeed * 2.237 * 10) / 10;
-        document.querySelector('.wind-speed').textContent = `${windSpeedMPH} mph`
+        document.querySelector('.windspeed').textContent = `${windSpeedMPH} mph`
 
         // Add windChill
         const windChill = calcWindChill(tempFar, windSpeedMPH);
-        document.querySelector('.wind-chill').textContent = `${windChill} `;
+        document.querySelector('.windchill').textContent = `${windChill} `;
 
         // Add Weather Forecast - Day
         const currentDate = new Date(jsObject.list[0].dt_txt)
@@ -88,14 +88,17 @@ fetch(apiURL)
 const calcWindChill = (temperature, windSpeed) => {
     let windChillVal;
 
-    if (temperature <= 50 && windSpeed > 3) {
-        windChillVal = 35.74 + (0.6215 * temperature) - (35.75 * (windSpeed ** 0.16)) + (0.4275 * (temperature * (windSpeed ** 0.16)));
-    
-        windChillVal = Math.round(windChillVal * 100) / 100;
+    // if the temperature is 40 or blow AND wind speed is 10 or greater, calculate windchill
+    if (temperature <= 40 && windSpeed >= 10) {
+        windChillVal = 35.74 + (0.6215 * temperature) - (35.75 * Math.pow(windSpeed, 0.16)) + (0.4275 * (temperature * Math.pow(windSpeed, 0.16)));
+        windChillVal = Math.ceil(windChillVal);
     
         return windChillVal;
+    // otherwise, calculate windchill anyways  
     } else {
-        windChillVal = 'N/A';
+        windChillVal = 35.74 + (0.6215 * temperature) - (35.75 * Math.pow(windSpeed, 0.16)) + (0.4275 * (temperature * Math.pow(windSpeed, 0.16)));
+        windChillVal = Math.ceil(windChillVal);
+
         return windChillVal;
     }
 }
