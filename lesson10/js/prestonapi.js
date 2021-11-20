@@ -89,7 +89,7 @@ const calcWindChill = (temperature, windSpeed) => {
     let windChillVal;
 
     // if the temperature is 40 or blow AND wind speed is 10 or greater, calculate windchill
-    if (temperature <= 50 && windSpeed >= 3) {
+    if (temperature <= 50 && windSpeed > 3) {
         windChillVal = 35.74 + (0.6215 * temperature) - (35.75 * Math.pow(windSpeed, 0.16)) + (0.4275 * (temperature * Math.pow(windSpeed, 0.16)));
         windChillVal = Math.ceil(windChillVal);
     
