@@ -6,14 +6,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Home Page">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="shortcut icon" href="favicon.ico">
     <link rel="shortcut icon" href="#">
     <title>Weather Home Page</title>
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/medium.css">
     <link rel="stylesheet" href="css/small.css">
-    <link rel="shortcut icon" href="favicon.ico">
     
+  
 
 
 </head>
@@ -45,9 +46,9 @@
     <section id="mainbodystuff">
       <div class="prestonweathersize hero">
         <picture>
-          <source media="(max-width: 39rem)" srcset="images/prestonsmall.jpeg">
-          <source media="(max-width: 69rem)" srcset="images/prestonmedium.jpeg">
-          <source media="(min-width: 70rem)" srcset="images/prestonlarge.jpeg">
+          <source media="(max-width: 39rem)" srcset="images/prestonsmall.jpg">
+          <source media="(max-width: 69rem)" srcset="images/prestonmedium.jpg">
+          <source media="(min-width: 70rem)" srcset="images/prestonlarge.jpg">
           <img src="images/prestonlarge.jpeg" alt="preston weather sizes">
         </picture>
        
@@ -60,30 +61,31 @@
           <table id="summarycenter">
             <h2>Weather Summary</h2>
             <tr>  
-                <td>Temperature:</td>
+                <td>Currently:</td>
                 <td>Sunny!</td>
             </tr>
             <tr>
-                <td>Currently:</td>
+                <td>High:</td>
                 <td>110 °F</td>
             </tr>
             <tr>
+                <td>Wind Chill:</td>
+                <td><span id="windChill"></span>&deg;F</td>
+            </tr>
+            <tr>
                 <td>Humidity:</td>
-                <td>60%</td>
+                <td>67%</td>
             </tr>
             <tr>
                 <td>Wind Speed:</td>
-                <td>30mph</td>
-            </tr>
-            <tr>
-                <td>Real Feel:</td>
-                <td>120 °F</td>
+                <td>15 mph</td>
             </tr>
         </table>
         </section>
         </div>
-        
+        <script src="js/windchill.js"></script>
         <br><br>
+        
         <h2>5 Day Forecast</h2>
         <div class="fivedayforecast">
             <ul class="fivedayalign">
