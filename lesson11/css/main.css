@@ -694,8 +694,16 @@ form label.personal input:required:valid{
         
     }
 
-
     }
+
+.upcomingevents{
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    max-width: 300px;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center;
+}
 
 /*footer*/
 footer {
