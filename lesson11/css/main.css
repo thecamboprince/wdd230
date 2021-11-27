@@ -653,13 +653,15 @@ form label.personal input:required:valid{
     font-family: 'Noto Sans SC', sans-serif;
 }
 
-@media only screen and (max-width: 650px) {
+/*Smaller Size view*/
+@media only screen and (max-width: 450px) {
     .townie{
         display: grid;
 	    grid-template-columns: 1fr;
         box-shadow: none;
         background-color: #fafafa;
-        margin: 0 center;
+        margin: 0 auto;
+        max-width: 500px;
     }
 
     section{
@@ -670,7 +672,7 @@ form label.personal input:required:valid{
     
     
     .townie img {
-        max-width: 75%;
+        max-width: 100%;
         border-radius: 10px;
         box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
     }
@@ -695,6 +697,53 @@ form label.personal input:required:valid{
     }
 
     }
+
+    /*Medium Size View*/
+    @media screen and (min-width: 451px) and (max-width: 850px) {
+        .townie{
+            display: grid;
+            grid-template-columns: 1fr;
+            box-shadow: none;
+            background-color: #fafafa;
+            margin: 0 auto;
+            max-width: 710px;
+            text-align: center;
+        } 
+
+    
+        section{
+            border-radius: 5px;
+            box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+            padding: 10px;
+        }
+        
+        
+        .townie img {
+            max-width: 45%;
+            border-radius: 10px;
+            box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+        }
+    
+        #forecast {display: none;}
+    
+        .forecast-card{
+            margin-top: 5px;
+        }
+    
+        .textontop{
+            position:relative;
+            top: 10px;
+            left: 20px;
+            background:#ffffff;
+            opacity: .8;
+            font-size: .65em;
+            height: 40%;
+            border-radius: 10px;
+            box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+            
+        }
+    
+        }
 
 .upcomingevents{
     border-radius: 10px;

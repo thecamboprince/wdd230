@@ -35,6 +35,6 @@ fetch(requestURL)
     section.appendChild(p3);
     section.appendChild(image);
 
-    document.querySelector('div.townie').appendChild(section);
+    document.querySelector('.townie').appendChild(section);
     }
 }});
