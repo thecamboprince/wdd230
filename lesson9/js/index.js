@@ -26,7 +26,6 @@ fetch(requestURL)
     p2.textContent = 'Population: ' + towns[i].currentPopulation;
     p3.textContent = 'Average Rainfall: ' + towns[i].averageRainfall + " inches";
     image.setAttribute('src', "images/" + towns[i].photo);
-    image.setAttribute ('alt', towns[i].name + ' ' + ", Idaho");
 
     section.appendChild(h3);
     section.appendChild(h4);
@@ -35,6 +34,6 @@ fetch(requestURL)
     section.appendChild(p3);
     section.appendChild(image);
 
-    document.querySelector('div.townie').appendChild(section);
+    document.querySelector('.townie').appendChild(section);
     }
 }});

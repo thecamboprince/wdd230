@@ -647,13 +647,13 @@ form label.personal input:required:valid{
     font-family: 'Noto Sans SC', sans-serif;
 }
 
-@media only screen and (max-width: 650px) {
+@media only screen and (max-width: 40em) {
     .townie{
         display: grid;
 	    grid-template-columns: 1fr;
         box-shadow: none;
         background-color: #fafafa;
-        margin: 0 center;
+        margin: 0 auto;
     }
 
     section{
@@ -671,6 +671,40 @@ form label.personal input:required:valid{
 
     #forecast {display: none;}
     }
+
+
+@media only screen and (max-width: 770px) {
+
+        .townie{
+           display: block;
+           grid-template-columns: 1fr;
+            box-shadow: none;
+            background-color: #fafafa;
+            margin: 0 auto;
+            max-width: 700px;
+           
+        }
+
+
+
+        .townie img {
+            max-width: 40%;
+            border-radius: 10px;
+            box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+        }
+
+        
+    
+        section{
+            border-radius: 5px;
+            box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+            padding: 10px;
+        }
+        
+        
+    
+        #forecast {display: none;}
+        }
 
 /*footer*/
 footer {
