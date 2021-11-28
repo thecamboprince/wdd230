@@ -664,6 +664,12 @@ form label.personal input:required:valid{
         max-width: 500px;
     }
 
+    .townie img {
+        max-width: 100%;
+        border-radius: 10px;
+        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    }
+
     section{
         border-radius: 5px;
         box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
@@ -671,11 +677,7 @@ form label.personal input:required:valid{
     }
     
     
-    .townie img {
-        max-width: 100%;
-        border-radius: 10px;
-        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-    }
+    
 
     #forecast {display: none;}
 
@@ -710,19 +712,41 @@ form label.personal input:required:valid{
             text-align: center;
         } 
 
-    
-        section{
-            border-radius: 5px;
-            box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-            padding: 10px;
-        }
-        
-        
         .townie img {
             max-width: 45%;
             border-radius: 10px;
             box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
         }
+
+    
+        section{
+            border-radius: 5px;
+            box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+            padding: 10px;
+            display: inline-flex;
+        }
+
+       
+
+        section img{
+            height: 20rem;
+            padding-bottom: 0;
+        }
+
+        section>*:first-child {
+            align-self:flex-start;
+        }
+        
+        section:nth-child(2){
+            align-self:auto;
+        }
+        
+        section:nth-child(odd){
+            flex-direction: row-reverse;
+            justify-content: space-between;
+        }
+        
+        
     
         #forecast {display: none;}
     
