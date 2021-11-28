@@ -625,7 +625,7 @@ form label.personal input:required:valid{
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     grid-gap: 5px;
     grid-auto-flow: row;
-    font-family:'Noto Sans SC', sans-serif;
+    font-family: "ACME";
     color:#083047;
     padding: 1em;
     background-color: white;
@@ -665,6 +665,8 @@ form label.personal input:required:valid{
         background-color: #fafafa;
         margin: 0 auto;
         max-width: 500px;
+        font-family: "ACME";
+
     }
 
     .townie img {
