@@ -651,6 +651,9 @@ form label.personal input:required:valid{
 
 .article{font-size:.75em;
     font-family: 'Noto Sans SC', sans-serif;
+    max-width: 930px;
+    margin: 0 auto;
+
 }
 
 /*Smaller Size view*/
@@ -723,7 +726,8 @@ form label.personal input:required:valid{
             border-radius: 5px;
             box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
             padding: 10px;
-            display: flex;            
+            display: flex;
+            overflow: scroll;
         }
 
         
@@ -732,6 +736,8 @@ form label.personal input:required:valid{
             justify-content: space-between;
             text-align: center;
         }
+
+
         
         
     
