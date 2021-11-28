@@ -705,7 +705,7 @@ form label.personal input:required:valid{
 
     /*Medium Size View*/
     @media screen and (min-width: 451px) and (max-width: 941px) {
-        .townie{
+          .townie{
             display: grid;
             grid-template-columns: 1fr;
             box-shadow: none;
@@ -715,30 +715,41 @@ form label.personal input:required:valid{
             text-align: center;
         } 
 
+        .townie section:nth-child(odd) img, .townie section:nth-child(even) p, .townie section:nth-child(even) h2, .townie section:nth-child(even) h3{
+            grid-column: 2/2;
+        }
+        .townie section:nth-child(even) img, .townie section:nth-child(odd) p, .townie section:nth-child(odd) h2, .townie section:nth-child(odd) h3{
+            grid-column: 1/2;
+        }
         .townie img {
             max-width: 45%;
             border-radius: 10px;
             box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
         }
-
     
-        section{
+         section{
             border-radius: 5px;
             box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
             padding: 10px;
-            display: flex;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
             overflow: scroll;
+        } 
+
+        .townie img{
+            grid-row: 1/5;
+            margin: 0 auto;
+            min-height: 3px;
+            height: 100%;
+            max-height: 300px;
+            min-width: 5px;
+            width: 100%;
+            max-width: 500px;
+        }
+        .townie section:last-child{
+            margin-bottom: 20px;
         }
 
-        
-        section:nth-child(odd){
-            flex-direction:row-reverse;
-            justify-content: space-between;
-            text-align: center;
-        }
-
-
-        
         
     
         #forecast {display: none;}
