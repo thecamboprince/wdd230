@@ -476,6 +476,7 @@ h6{
 
 h3{
     font-family: "Acme";
+    font-size: 17px;
 }
 
 p{
@@ -731,6 +732,7 @@ form label.personal input:required:valid{
             box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
         }
 
+    
     
          section{
             border-radius: 5px;

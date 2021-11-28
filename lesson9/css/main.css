@@ -370,27 +370,27 @@ nav {
 
 /*Main - Contact*/
 .contact{
-    background-color: #023047;
+    background-color: #fafafa;
     margin: 0 auto;
     overflow-x: hidden;
     padding: 20px;
     border: 2px #f9ebac;
-    font-family: 'Noto Sans SC', sans-serif;
     color: white;
     border-radius: 10px;
-    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    box-shadow: #083047 0px 5px 15px;
     max-width: 500px;
 }
 
 .contact p{
-    font-family: "Montserrat";
+    font-family: "Acme";
     font-size: 1em;
     text-align: center;
+    color: #083047;
 }
 
 .contact iframe{
     border-radius: 10px;
-    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    box-shadow: #083047 0px 5px 15px;
     margin: 0 auto;
 }
 
@@ -401,6 +401,7 @@ nav {
 
 #socialmedialogo{
     text-align: center;
+    
 }
 #socialmedialogo img{
     width: 45px;
@@ -475,6 +476,7 @@ h6{
 
 h3{
     font-family: "Acme";
+    font-size: 17px;
 }
 
 p{
@@ -730,6 +732,7 @@ form label.personal input:required:valid{
             box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
         }
 
+    
     
          section{
             border-radius: 5px;
