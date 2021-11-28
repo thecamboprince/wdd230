@@ -701,7 +701,7 @@ form label.personal input:required:valid{
     }
 
     /*Medium Size View*/
-    @media screen and (min-width: 451px) and (max-width: 850px) {
+    @media screen and (min-width: 451px) and (max-width: 941px) {
         .townie{
             display: grid;
             grid-template-columns: 1fr;
@@ -723,27 +723,14 @@ form label.personal input:required:valid{
             border-radius: 5px;
             box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
             padding: 10px;
-            display: inline-flex;
+            display: flex;            
         }
 
-       
-
-        section img{
-            height: 20rem;
-            padding-bottom: 0;
-        }
-
-        section>*:first-child {
-            align-self:flex-start;
-        }
-        
-        section:nth-child(2){
-            align-self:auto;
-        }
         
         section:nth-child(odd){
-            flex-direction: row-reverse;
+            flex-direction:row-reverse;
             justify-content: space-between;
+            text-align: center;
         }
         
         
