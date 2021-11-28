@@ -713,6 +713,7 @@ form label.personal input:required:valid{
             margin: 0 auto;
             max-width: 710px;
             text-align: center;
+            font-family: "Acme";
         } 
 
         .townie section:nth-child(odd) img, .townie section:nth-child(even) p, .townie section:nth-child(even) h2, .townie section:nth-child(even) h3{

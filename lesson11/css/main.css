@@ -713,6 +713,7 @@ form label.personal input:required:valid{
             margin: 0 auto;
             max-width: 710px;
             text-align: center;
+            font-family: "Acme";
         } 
 
         .townie section:nth-child(odd) img, .townie section:nth-child(even) p, .townie section:nth-child(even) h2, .townie section:nth-child(even) h3{
@@ -726,6 +727,7 @@ form label.personal input:required:valid{
             border-radius: 10px;
             box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
         }
+
     
          section{
             border-radius: 5px;
@@ -750,6 +752,8 @@ form label.personal input:required:valid{
             margin-bottom: 20px;
         }
 
+
+    
         
     
         #forecast {display: none;}
