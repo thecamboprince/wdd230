@@ -186,13 +186,13 @@ main{
   margin: 0 auto;
 }
 
-
-.image {
-  background-image: url('./final/images/mainfirst.jpg');
+.wrapper{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
 }
 
-.image {
-  max-width: 50%;
+
+.image { 
   height: 100%;
   background-position: top;
   background-repeat: no-repeat;
@@ -200,10 +200,15 @@ main{
   float: right;
 }
 
+.image img{
+
+  max-width: 100%;
+
+}
+
 .text {
   box-sizing: border-box;
   float: left;
-  margin-left: -100%;
   padding: 2em;
   width: 100%;
   font-size: 16px;
