@@ -38,6 +38,8 @@ a {
   justify-content: space-between;
   align-items: center;
   padding: 1rem 1.5rem;
+
+  margin: 0 auto;
   
 }
 
@@ -180,17 +182,17 @@ a {
 *************************/
 
 main{
-  max-width: 980px;
+  max-width: 1368px;
   margin: 0 auto;
-
 }
+
 
 .image {
   background-image: url('/final/images/mainfirst.jpg');
 }
 
 .image {
-  width: 50%;
+  max-width: 50%;
   height: 100%;
   background-position: top;
   background-repeat: no-repeat;
@@ -218,6 +220,267 @@ h1{
   color: #4895ef;
   font-family: "Open Sans";
   font-weight: bold;
+}
+
+
+h2{
+  font-size: 44px;
+  font-family: "Open Sans", sans-serif;
+  font-weight: bold;
+}
+
+
+h4 {
+  width: 40%;
+  font-size: 18px;
+  padding: 10px;
+  background-color: #3f37c9;
+  text-align: center;
+  border-radius: 15px;
+  color: white;
+  font-family: "Open Sans";
+  font-weight: bold;
+  padding: 10px;
+}
+
+h4 a{
+  background-color: #3f37c9;
+  text-align: center;
+  color: white;
+  font-family: "Open Sans";
+  font-weight: bold;
+  
+}
+
+h4 a:hover{
+  width: 40%;
+  font-size: 18px;
+  background-color: #3f37c9;
+  text-align: center;
+  border-radius: 15px;
+  color: #fad2e1;
+  font-family: "Open Sans";
+  font-weight: bold;
+  text-decoration: none;
+}
+
+
+
+/************************
+** Current Weather **
+*************************/
+.currentweatherwidth{
+  margin: 0 auto;
+  
+}
+
+#currentWeather {
+  border-bottom: 3px solid #dfe7fd;
+  border-top: 3px solid #dfe7fd;
+  display: inline-flex;
+  grid-template-columns: repeat(2, 1fr);
+  padding: 0.75rem 1.5rem;
+  background-color: white;
+  color: black;
+  
+  margin-top: 40px;
+  position: relative;
+}
+
+#currentWeather p{
+  margin: 25px 15px;
+  font-size: 16px;
+  font-family: 'Roboto', sans-serif;
+  text-align: center;
+}
+
+
+#currentWeather :first-child {
+  grid-column: 1 / -1;
+  margin-bottom: 10px;
+}
+
+/* Weather Forecast */
+.forecast-box {
+  width: max-content;
+  display: grid;
+  justify-items: center;
+  align-items: center;
+  grid-template-columns: repeat(3, 80px);
+  gap: 20px; /* grid-gap is deprecated */
+  margin: 2rem auto 0;
+}
+
+.forecast-box h4,
+.forecast p {
+  margin: 0;
+}
+
+.forecast-box > div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+
+
+
+
+
+/************************
+** Join **
+*************************/
+#summary > h1 {
+  position: absolute;
+  top: 40%;
+  margin-left: 2rem;
+  font-size: 14px;
+  color: white;
+  text-shadow: 0 3px 9px rgba(0, 0, 0, 0.54);
+}
+
+/* Form */
+#contact > div {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 3rem;
+  align-items: flex-start;
+  font-size: 14px;
+}
+
+#contact > h2 {
+  text-align: left;
+  margin: 0;
+}
+
+#benefits {
+  border: 1px solid #0076b2;
+  border-radius: 10px;
+  padding: 1rem;
+  box-shadow: 0 6px 20px 0 rgb(0 0 0 / 15%);
+  margin-top: 2rem;
+  width: 400px;
+}
+
+#benefits h4 {
+  margin-bottom: 0.9rem;
+}
+
+#benefits h5 {
+  font-size: 14px;
+  margin-top: 0;
+  margin-bottom: 0.5rem;
+}
+
+#benefits ul {
+  padding-left: 1.2rem;
+  margin-top: 0;
+}
+
+form fieldset {
+  margin: 2rem 0;
+  border: 1px solid #0076b2;
+  border-radius: 10px;
+  padding: 0.5rem 2% 2rem 2%;
+  box-shadow: 0 6px 20px 0 rgb(0 0 0 / 15%);
+}
+
+form legend {
+  color: #0076b2;
+  margin: 0 1rem;
+  padding: 0 0.5rem;
+}
+
+form label.top,
+form div {
+  display: block;
+  padding-top: 1rem;
+  color: #0076b2;
+  font-size: 14px;
+}
+
+form label.top input,
+form label.top select,
+form label.top textarea {
+  display: block;
+  font-size: 14px;
+  border: 1px solid #999;
+  border-radius: 4px;
+  padding: 0.75rem;
+  color: #555;
+  width: 100%;
+  max-width: 25rem;
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+form label.top select {
+  -webkit-appearance: none;
+}
+
+form label.top textarea {
+  height: 8rem;
+}
+
+form input.submitBtn {
+  border: none;
+  background-color: #0076b2;
+  color: white;
+  border-radius: 1rem;
+  padding: 0.75rem 1.5rem;
+  margin: 0 0 2rem 2%;
+  width: 96%;
+  max-width: 20rem;
+  cursor: pointer;
+}
+
+form label.top input:required {
+  border-left: 6px solid red;
+}
+
+form label.top input:required:valid {
+  border-left: 6px solid green;
+}
+
+
+/************************
+** Contact **
+*************************/
+iframe {
+  width: 100%;
+  min-height: 240px;
+  margin: 0 auto;
+}
+
+#contact-info img {
+  max-width: 3rem;
+  margin-right: 0.75rem;
+}
+
+#contact-info p {
+  display: flex;
+  align-items: center;
+  margin: 0;
+  line-height: 1.5;
+}
+
+#contact-info h4 {
+  margin-top: 1rem;
+}
+
+#contact-info .social {
+  display: flex;
+  list-style: none;
+  padding: 0;
+}
+
+#contact-info .social li:not(:last-child) {
+  margin-right: 1rem;
+}
+
+#team > div {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
 }
 
 
@@ -289,6 +552,23 @@ h1{
     
   }
 
+
+
+  #currentWeather {
+    border-bottom: 3px solid #dfe7fd;
+    border-top: 3px solid #dfe7fd;
+    display: inline-grid;
+    grid-template-columns: repeat(2, 1fr);
+    padding: 0.75rem 1.5rem;
+    background-color: white;
+    color: black;
+    
+    margin-top: 40px;
+    position: relative;
+  }
+
 }
+
+
 
 
