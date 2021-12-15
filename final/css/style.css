@@ -269,64 +269,185 @@ h4 a:hover{
 /************************
 ** Current Weather **
 *************************/
-.currentweatherwidth{
-  margin: 0 auto;
-  
-}
 
 #currentWeather {
   border-bottom: 3px solid #dfe7fd;
   border-top: 3px solid #dfe7fd;
-  display: inline-flex;
+  display: inline-grid;
   grid-template-columns: repeat(2, 1fr);
+  column-gap: 20px;
   padding: 0.75rem 1.5rem;
   background-color: white;
   color: black;
-  
+  margin: 0 auto;
   margin-top: 40px;
   position: relative;
 }
 
-#currentWeather p{
-  margin: 25px 15px;
-  font-size: 16px;
-  font-family: 'Roboto', sans-serif;
+
+.app {
+  width: 414px;
+  height: 500px;
+  display: block;
+  margin: 0 auto;
   text-align: center;
+  padding: 40px 0;
+  overflow: hidden;
+  border-radius: 50px;
+  background-image: linear-gradient(#30A2C5, #00242F);
+  
+  
 }
-
-
-#currentWeather :first-child {
-  grid-column: 1 / -1;
-  margin-bottom: 10px;
-}
-
-/* Weather Forecast */
-.forecast-box {
-  width: max-content;
-  display: grid;
-  justify-items: center;
-  align-items: center;
-  grid-template-columns: repeat(3, 80px);
-  gap: 20px; /* grid-gap is deprecated */
-  margin: 2rem auto 0;
-}
-
-.forecast-box h4,
-.forecast p {
-  margin: 0;
-}
-
-.forecast-box > div {
+.bar {
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
+  justify-content: space-between;
+  padding: 0 40px;
+}
+.bar a {
+  color: #fff;
+  font-size: 20px;
+}
+.titlebar {
+  line-height: 0.5rem;
+  color: #fff;
+}
+.titlebar h4 {
+  font-size: 40px;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin: 2rem;
+}
+.titlebar .description {
+  text-transform: uppercase;
+}
+
+.temperature {
+  background: rgb(206, 206, 206);
+  border-radius: 500px;
+  width: 200px;
+  height: 200px;
+  text-align: center;
+  display: block;
+  margin: auto;
+  box-shadow: 0 30px 20px #1d1d1d36;
+  margin: auto;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+.temperature img {
+  margin-bottom:-20px;
+}
+.temperature p {
+  font-size: 14px;
+}
+.temperature h2 {
+  margin: 0;
+  font-size: 60px;
+  font-weight: 300;
+}
+.extra {
+  display: flex;
+  justify-content: space-around;
+  color: #fff;
+  padding-bottom: 30px;
+}
+.extra .col .info{
+  padding-bottom: 10px;
 }
 
 
+#cityname{
+  margin: 0 auto;
+  font-size: 24px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  background-color: #5bc0e7;
+  text-decoration: none;
+}
+
+/*3 Day Forecast*/
+.fivedayforecast{
+  padding: 10px;
+  font-family: 'Pacifico', cursive;
+  color: #083047;
+  border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  overflow: scroll;
+  max-width: 800px;
+  margin: 0 auto;
+  background-color: #d4edf8;
+
+}
+
+.fivedayalign { 
+  display: grid; 
+  grid-template-columns: repeat(5, 1fr);
+  max-height: none;
+}
+
+.fivedayalign li > * { 
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.fivedayalign li {
+  padding: 1rem;
+  list-style-type: none;
+}
+
+.fivedayalign img {
+  margin: 0 auto;
+  padding: 1.5rem 0;
+  max-width: 50px;
+  
+}
+
+.fivedayalign p {
+  font-size: .85rem;
+  margin: 0 auto;
+}
+
+.forecast {
+  display: grid;
+  margin: 0 auto;
+  text-align: center;
+  font-family: "ACME";
+  color: #083047;
+  
+}
+
+.forecast-card{
+  border-radius: 10px 50px 10px 10px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  margin-left: 5px;
+}
+
+.forecast-card img{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+/*End of 5 Day Forecast*/
 
 
 
+
+
+
+
+
+
+
+h4{
+    font-family: "ACME";
+    text-decoration: underline solid #023047;
+}
+
+hr {
+  width: 50%;
+  border: 4px solid #023047;
+  border-radius: 5px;
+}
 
 /************************
 ** Join **
@@ -338,6 +459,12 @@ h4 a:hover{
   font-size: 14px;
   color: white;
   text-shadow: 0 3px 9px rgba(0, 0, 0, 0.54);
+}
+
+#contactlargetext{
+  font-size: 30px;
+  width: 30%;
+  padding: 40px;
 }
 
 /* Form */
@@ -424,7 +551,7 @@ form label.top textarea {
 
 form input.submitBtn {
   border: none;
-  background-color: #0076b2;
+  background-color: #6168ff;
   color: white;
   border-radius: 1rem;
   padding: 0.75rem 1.5rem;
@@ -442,6 +569,10 @@ form label.top input:required:valid {
   border-left: 6px solid green;
 }
 
+
+#membershiptextlarge{
+  width: 80%;
+}
 
 /************************
 ** Contact **
@@ -487,6 +618,88 @@ iframe {
   font-size: 13px;
 }
 
+
+/************************
+** Directory **
+*************************/
+#directory {
+  padding: 0;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  position:relative;
+  z-index: -1;
+ 
+}
+
+#businesses {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  column-gap: 5px;
+  row-gap: 30px;
+}
+
+
+#businesses h3 {
+  margin-top: 0;
+  margin-bottom: 0.5rem;
+}
+
+#businesses p {
+  font-size: 0.85rem;
+  line-height: 1.5;
+  margin-top: 0;
+}
+
+#businesses .card {
+  background-color: #ffffff;
+  padding: 1rem;
+  width: 70%;
+  border-style: none;
+  border-bottom: 2px solid #fad2e1;
+}
+
+#businesses .card > div > p {
+  font-weight: bold;
+}
+
+
+#businesses .card > div div {
+  display: flex;
+  align-items: flex-start;
+}
+
+#businesses .card > div div p {
+  margin-bottom: 0.5rem;
+}
+
+#businesses .card > div div img {
+  max-width: 35%;
+}
+
+
+#businesses .card a {
+  display: block;
+  margin-top: 0.5rem;
+  position: relative;
+}
+
+#businesses .card p:last-child {
+  margin-top: 1rem;
+}
+
+#directory > div:first-child {
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem;
+}
+
+
+
+#businesstextlarge{
+  font-size: 24px;
+  width: 30%;
+  margin: 0 auto;
+}
 
 /************************
 ** Medium Size **
@@ -561,11 +774,11 @@ iframe {
     border-bottom: 3px solid #dfe7fd;
     border-top: 3px solid #dfe7fd;
     display: inline-grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     padding: 0.75rem 1.5rem;
     background-color: white;
     color: black;
-    
+    row-gap: 10px;
     margin-top: 40px;
     position: relative;
   }

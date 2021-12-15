@@ -1,0 +1,67 @@
+{
+    "businesses": [
+      {
+        "name": "Beehive Plumbing",
+        "logo": "beehiveplumbing.png",
+        "address": "7129 S State Street, Suite B Midvale UT 84047",
+        "phone": "(801) 599-4902",
+        "email": "scheduling@beehiveplumbing.com",
+        "website": "https://www.beehiveplumbing.com/",
+        "level": "Gold"
+      },
+      {
+        "name": "AECOM",
+        "logo": "aecom.png",
+        "address": "756 East Winchester, Suite 400 Murray UT 84107",
+        "phone": "(801) 904-4000",
+        "email": "support@aecom.com",
+        "website": "https://aecom.com/",
+        "level": "Silver"
+      },
+      {
+        "name": "Furst Construction",
+        "logo": "furst.svg",
+        "address": "708 West North Temple Salt Lake City UT 84116",
+        "phone": "(801) 972-3838",
+        "email": "support@furst.com",
+        "website": "https://furstconstruction.com/",
+        "level": "Silver"
+      },
+      {
+        "name": "Mountainland Supply",
+        "logo": "mountainland.png",
+        "address": "1505 W 130 S Orem UT 84058",
+        "phone": "(801) 364-3164",
+        "email": "support@mountainlandsupply.com",
+        "website": "https://www.mountainlandsupply.com/",
+        "level": "Silver"
+      },
+      {
+        "name": "Wilson & Company",
+        "logo": "wilsonco.png",
+        "address": "520 S 800 W Lindon UT 84042",
+        "phone": "(801) 802-6946",
+        "email": "support@wilsonco.com",
+        "website": "https://www.wilsonco.com/",
+        "level": "Gold"
+      },
+      {
+        "name": "Sunpro",
+        "logo": "sunroc.png",
+        "address": "520 S 800 W Lindon UT 84042",
+        "phone": "(234) 701-1211-5555",
+        "email": "support@sunroc.com",
+        "website": "https://www.sunroc.com/",
+        "level": "Gold"
+      },
+      {
+        "name": "REDCON",
+        "logo": "redcon.png",
+        "address": "25 S Main St #200 Centerville UT 84014",
+        "phone": "(801) 298-2401",
+        "email": "survey@redcon.com",
+        "website": "http://www.redcon.com/",
+        "level": "Gold"
+      }
+    ]
+  }
