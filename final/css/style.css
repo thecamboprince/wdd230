@@ -188,7 +188,7 @@ main{
 
 
 .image {
-  background-image: url('/final/images/mainfirst.jpg');
+  background-image: url('./final/images/mainfirst.jpg');
 }
 
 .image {
