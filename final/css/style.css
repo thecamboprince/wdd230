@@ -483,6 +483,9 @@ iframe {
   grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
 }
 
+#team p{
+  font-size: 13px;
+}
 
 
 /************************
